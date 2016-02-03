@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var blueBallon: UIImageView!
+    
+    @IBOutlet weak var redBallon: UIImageView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +26,22 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func hideBlue(sender: AnyObject) {
+        blueBallon.hidden = true
+    
+    }
+    
+    
+    @IBAction func hideRed(sender: AnyObject) {
+        redBallon.hidden = true
+        
+    }
+    
+    @IBAction func showEverything(sender: AnyObject) {
+        blueBallon.hidden = false
+        redBallon.hidden = false
+        
+    }
+    
 }
 
